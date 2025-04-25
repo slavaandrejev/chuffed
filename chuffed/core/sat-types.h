@@ -188,6 +188,7 @@ private:
 	unsigned int _decidable : 1;  // can be used as decision var
 	unsigned int _uipable : 1;    // can be used as head of learnt clause
 	unsigned int _learnable : 1;  // can be used in tail of learnt clause
+    [[maybe_unused]]
 	unsigned int _padding : 5;    // leave some space for other flags
 public:
 	LitFlags(bool d, bool u, bool l) : _decidable(d), _uipable(u), _learnable(l), _padding(0) {}

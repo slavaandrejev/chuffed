@@ -168,6 +168,7 @@ class BoundedPathPropagator : public GraphPropagator {
 		}
 	};
 	ExplainerDijkstra* explain_sp;
+    [[maybe_unused]]
 	ExplainerDijkstra* bexplain_sp;
 
 	class FilteredDijkstraMandatory : public DijkstraMandatory {

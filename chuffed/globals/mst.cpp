@@ -296,6 +296,7 @@ class DCMSTSearch : public BranchGroup {
 	std::vector<std::pair<int, int> > sums;
 	std::vector<std::vector<std::pair<int, int> > > costs;
 
+    [[maybe_unused]]
 	int int_cur;
 	Tint curr_root_idx;
 	Tint h;

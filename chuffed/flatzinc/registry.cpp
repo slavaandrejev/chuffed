@@ -1114,6 +1114,7 @@ void p_bool_sum_gt(const ConExpr& ce, AST::Node* ann) { p_bool_sum_CMP(IRT_GT, c
 		}
 */
 
+[[maybe_unused]]
 void p_tree(const ConExpr& ce, AST::Node* /*ann*/) {
 	vec<BoolView> vs;
 	arg2BoolVarArgs(vs, ce[0]);
@@ -1199,6 +1200,7 @@ void p_tree_new(const ConExpr& ce, AST::Node* /*ann*/) {
 	tree(vs, es, ad, en);
 }
 
+[[maybe_unused]]
 void p_connected(const ConExpr& ce, AST::Node* /*ann*/) {
 	vec<BoolView> vs;
 	arg2BoolVarArgs(vs, ce[0]);
@@ -1284,6 +1286,7 @@ void p_connected_new(const ConExpr& ce, AST::Node* /*ann*/) {
 	connected(vs, es, ad, en);
 }
 
+[[maybe_unused]]
 void p_steiner_tree(const ConExpr& ce, AST::Node* /*ann*/) {
 	vec<BoolView> vs;
 	arg2BoolVarArgs(vs, ce[0]);
@@ -1378,6 +1381,7 @@ void p_steiner_tree_new(const ConExpr& ce, AST::Node* /*ann*/) {
 	steiner_tree(vs, es, ad, en, w, ws);
 }
 
+[[maybe_unused]]
 void p_mst(const ConExpr& ce, AST::Node* /*ann*/) {
 	vec<BoolView> vs;
 	arg2BoolVarArgs(vs, ce[0]);
@@ -1471,6 +1475,7 @@ void p_mst_new(const ConExpr& ce, AST::Node* /*ann*/) {
 	mst(vs, es, ad, en, w, ws);
 }
 
+[[maybe_unused]]
 void p_dtree(const ConExpr& ce, AST::Node* /*ann*/) {
 	vec<BoolView> vs;
 	arg2BoolVarArgs(vs, ce[0]);
@@ -1550,6 +1555,7 @@ void p_dtree_new(const ConExpr& ce, AST::Node* /*ann*/) {
 	dtree(root, vs, es, in, ou, en);
 }
 
+[[maybe_unused]]
 void p_dag(const ConExpr& ce, AST::Node* /*ann*/) {
 	vec<BoolView> vs;
 	arg2BoolVarArgs(vs, ce[0]);
@@ -1641,6 +1647,7 @@ void p_dag_new(const ConExpr& ce, AST::Node* /*ann*/) {
 	dag(extra, vs, es, in, ou, en);
 }
 
+[[maybe_unused]]
 void p_path(const ConExpr& ce, AST::Node* /*ann*/) {
 	vec<BoolView> vs;
 	arg2BoolVarArgs(vs, ce[0]);
@@ -1722,6 +1729,7 @@ void p_path_new(const ConExpr& ce, AST::Node* /*ann*/) {
 	path(s, t, vs, es, in, ou, en);
 }
 
+[[maybe_unused]]
 void p_bounded_path(const ConExpr& ce, AST::Node* /*ann*/) {
 	vec<BoolView> vs;
 	arg2BoolVarArgs(vs, ce[0]);
