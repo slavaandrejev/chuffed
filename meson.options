@@ -1,0 +1,3 @@
+option('enable_cpprofiler', type: 'boolean', value: true, description: 'build with support for CPProfiler')
+option('enable_var_impact', type: 'boolean', value: false)
+option('build_examples', type: 'boolean', value: false)
